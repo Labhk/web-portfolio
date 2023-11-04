@@ -29,7 +29,7 @@ const MySkills = () => {
           </div>
 
           <div>
-            <ParaText top="2rem" bottom="1.5rem" >As a developer, I am a versatile developer with expertise in both frontend and backend development. In the frontend, I excel in technologies such as React, JavaScript, and Tailwind, while on the backend, I leverage Firebase, Node.js with Express.js, and MongoDB to create dynamic and robust web applications.</ParaText>
+            <ParaText top="2rem" bottom="1.5rem" >I am a versatile developer with expertise in both frontend and backend development. In the frontend, I excel in technologies such as React, JavaScript, and Tailwind, while on the backend, I leverage Firebase, Node.js with Express.js, and MongoDB to create dynamic and robust web applications.</ParaText>
 
             <ParaText>I've completed a few contract projects  that I'd be happy to discuss further, and I'm currently focused on advancing my skills in TypeScript and Next.js. I'm also eager to collaborate with fellow developers to enhance my learning and expertise.</ParaText>
           </div>
