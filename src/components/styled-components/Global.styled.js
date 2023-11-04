@@ -18,11 +18,14 @@ export const FlexContainer = styled.div`
 
     & > div {
         flex: ${({ fullWidthChild }) => fullWidthChild && 1};
+        
     }
 
     @media ${({ theme }) => theme.breakpoints.mobile}{
         display: ${({ responsiveFlex }) => responsiveFlex ? 'flex' : 'block'};
         flex-direction: ${({ responsiveDirection}) => responsiveDirection};
+        justify-content: center;
+        text-align: center;
     }
 `
 
@@ -81,6 +84,7 @@ export const Heading = styled(PaddingContainer)`
                     return;
             }
         }};
+        text-align: center;
     }
 
 `
@@ -97,6 +101,10 @@ export const ParaText = styled(PaddingContainer)`
 export const ParaText1 = styled(PaddingContainer)`
     color: ${({ theme }) => theme.colors.para_text_color};
     line-height: 1.5rem;
+    @media (max-width: 768px){
+        text-align: justify;   
+    }
+    
 `
 
 export const Particle = styled.img`
@@ -105,8 +113,13 @@ export const Particle = styled.img`
     left: ${({ initialLeft }) => initialLeft};
     right: ${({ initialRight }) => initialRight};
     bottom: ${({ initialBottom }) => initialBottom};
-    transform: rotate(${({ rotate }) => rotate})
-`
+    transform: rotate(${({ rotate }) => rotate});
+
+    @media (max-width: 768px){
+        display: none;
+    }
+`;
+
 
 export const IconContainer = styled.div`
     color: ${({color, theme}) => {

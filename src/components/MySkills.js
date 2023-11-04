@@ -11,6 +11,7 @@ import { BiLogoJavascript, BiLogoFirebase } from 'react-icons/bi';
 import { TbBrandNextjs } from 'react-icons/tb';
 import {AiFillHtml5} from 'react-icons/ai';
 import {BsGit} from 'react-icons/bs';
+import "../App.css"
 
 const MySkills = () => {
   return (
@@ -21,7 +22,7 @@ const MySkills = () => {
           <img src={WebBanner} alt='banner' />
         </SkillsCardContainer>
 
-        <div  style={{marginRight:"40px"}}>
+        <div  className='skill-set'>
           <div>
             <Heading as="h4" size="h4">MY SKILLS</Heading>
             <Heading as="h2" size="h2" top="0.5rem">What <BlueText>I can do</BlueText></Heading>

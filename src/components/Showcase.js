@@ -1,6 +1,7 @@
 import React from 'react';
 import { PaddingContainer, FlexContainer, Heading, BlueText,ParaText, Particle } from './styled-components/Global.styled';
 import { ShowcaseImageCard, ShowcaseParticleContainer, IconContainer } from './styled-components/Showcase.styles';
+import "../App.css"
 import ShowcaseImg from '../assets/boy.jpg';
 import BackgroundImg from '../assets/particle1.png';
 import {BsGithub, BsTwitter, BsLinkedin} from 'react-icons/bs';
@@ -16,7 +17,7 @@ const Showcase = () => {
   return (
     <PaddingContainer left="2%" right="2%" top="10%" bottom="10%" responsiveLeft="1rem" responsiveRight="1rem">
         <FlexContainer align="center" fullWidthChild>
-            <div > 
+            <div className='topper'> 
                 <Heading as="h4" size="h4" >Hello!</Heading>
 
                 <Heading as="h1" size="h1" top="0.5rem" bottom="1rem">
@@ -31,7 +32,7 @@ const Showcase = () => {
                 Hello, my name is Labh Khatke, and I am a full-stack developer with expertise in creating and designing user-friendly websites. I specialize in both front-end and back-end development. 
                 </ParaText>
 
-                <FlexContainer gap="20px" responsiveFlex>
+                <FlexContainer gap="20px" responsiveFlex >
                     <IconContainer>
                         <BsTwitter onClick={() => window.open('https://twitter.com/Labh__K', '_blank')} />
                     </IconContainer>

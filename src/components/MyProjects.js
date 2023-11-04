@@ -31,7 +31,7 @@ import { fadeInTopVariant } from '../utils/Variants';
 
 const MyProjects = () => {
   return (
-    <PaddingContainer style={{padding:"15px"}} top="5%" bottom="5%" responsiveTop="20%" responsiveLeft="1rem" responsiveRight="1rem">
+    <PaddingContainer style={{padding:"25px"}} top="5%" bottom="5%" responsiveTop="20%" responsiveLeft="1rem" responsiveRight="1rem">
         <Heading 
             size="h4"
         >
@@ -65,17 +65,19 @@ const MyProjects = () => {
             <Project5 />
         </PaddingContainer>
 
-        <PaddingContainer top="5rem" bottom="5rem">
-            <Project6  rowReverse/>
-        </PaddingContainer>
-
         <PaddingContainer top="5rem" bottom="5rem" style={{padding:"15px"}}>
             <Project7 />
         </PaddingContainer>
 
         <PaddingContainer top="5rem" bottom="5rem">
-            <Project8  rowReverse/>
+            <Project6  rowReverse/>
         </PaddingContainer>
+
+        
+
+        {/* <PaddingContainer top="5rem" bottom="5rem">
+            <Project8  rowReverse/>
+        </PaddingContainer> */}
         
         
     </PaddingContainer>

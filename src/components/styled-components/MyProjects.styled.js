@@ -6,7 +6,18 @@ export const ProjectContentContainer = styled.div`
 
 export const ProjectImageContainer = styled.div`
     display: flex;
+
     justify-content: ${({ justify }) => justify };
+
+    
+
+    @media ${({ theme }) => theme.breakpoints.mobile}{
+        > img {
+            width: 100%;
+            height: 100%;
+            
+        }
+    }
 `;
 
 export const TechStackCard = styled.span`
@@ -30,7 +41,6 @@ export const ProjectImage = styled.img`
 
     @media ${({ theme }) => theme.breakpoints.mobile}{
         width: 100%;
-        margin-top: 2rem;
     }
 `
 

@@ -1,20 +1,27 @@
 import styled from "styled-components";
 
 export const ShowcaseImageCard = styled.div`
+width: 100%; /* Use a percentage value to make it responsive */
+padding-top: 2rem;
+border-radius: 0.6rem;
+position: relative;
+overflow: hidden;
+
+@media ${({theme}) => theme.breakpoints.mobile}{
+    width: 100%; /* Adjust the width for smaller screens */
+    padding-top: 1rem;
     
-    width: max-content;
-    padding-top: 2rem;
-    border-radius: 1rem;
-    position: relative;
-    overflow: hidden;
+    > img{
+        height: 100%;
+        width: 100%;
+    }
+}
 `;
 
 export const ShowcaseParticleContainer = styled.div`
     position:relative;
 
-    @media ${({theme}) => theme.breakpoints.mobile}{
-        display: none;
-    }
+
 `
 
 export const IconContainer = styled.div`

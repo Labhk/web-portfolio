@@ -43,10 +43,12 @@ const Project = ({ rowReverse }) => {
             >
 
                 <FlexContainer align="center"  gap="1rem" style={{marginBottom:"10px"}}>
-                    <Heading as="h3" size="h3" >Mega China Hack</Heading>
-                        <div style={{backgroundColor:"#69d3e6", padding:'6px 10px', fontSize:"1rem", marginTop:"4px", borderRadius:"20px", width:"fit-content"}}>
+                <div className='project-head'>
+                    <Heading as="h3" size="h3" >Mega Hack China</Heading>
+                        <div className='custom-box'>
                             collab
                         </div>
+                      </div>
                 </FlexContainer>
 
                 <PaddingContainer top="1rem">

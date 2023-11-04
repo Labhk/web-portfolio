@@ -23,6 +23,7 @@ import {
 import {FaGithub} from 'react-icons/fa';
 
 import Project2 from '../../assets/Project2.jpg';
+import Video3 from '../../assets/project2.webm';
 import { fadeInLeftVariant, fadeInRightVariant } from '../../utils/Variants';
 
 const Project = ({ rowReverse }) => {
@@ -43,10 +44,12 @@ const Project = ({ rowReverse }) => {
             >
 
                 <FlexContainer align="center"  gap="1rem" style={{marginBottom:"10px"}}>
+                <div className='project-head'>
                     <Heading as="h3" size="h3" >MedStudySign.ai</Heading>
-                        <div style={{backgroundColor:"#69d3e6", padding:'6px 10px', fontSize:"1rem", marginTop:"4px", borderRadius:"20px", width:"fit-content"}}>
+                        <div className='custom-box'>
                             collab
                         </div>
+                      </div>
                 </FlexContainer>
 
                 <PaddingContainer top="1rem">
@@ -78,19 +81,16 @@ const Project = ({ rowReverse }) => {
 
         </FlexContainer>
         {isVideoModalOpen && (
-        <div className="video-modal">
-          <div className="video-content">
-            <iframe
-              title="Video Demo"
-              src="https://www.youtube.com/embed/JovpZZX31Ls"
-              frameBorder="0"
-
-              allowFullScreen
-            ></iframe>
-            <button onClick={closeVideoModal}><LiaWindowCloseSolid style={{color:"#69d3e6"}}/></button>
+          <div className="video-modal">
+            <div className="video-content">
+              <video controls>
+                <source src={Video3} type="video/webm" />
+                Your browser does not support the video tag.
+              </video>
+              <button onClick={closeVideoModal}><LiaWindowCloseSolid style={{ color: "#69d3e6" }} /></button>
+            </div>
           </div>
-        </div>
-      )}
+        )}
       </>
         
         
