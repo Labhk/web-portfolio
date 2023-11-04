@@ -60,7 +60,7 @@ const Project = ({ rowReverse }) => {
                 </PaddingContainer>
 
                 <ParaText1 top="1.5rem" bottom="2rem">This website, crafted with React Vite and CSS, serves as a registration and promotional platform for the Mega China Hack. It boasts a high-quality user interface and offers seamless translation between Chinese and English, achieved with the i18next framework.<br/>
-                This website was developed by the entire <a href="https://github.com/MEGA-Hackathon/china.megahack.tech/tree/main" target='blank'  style={{color:"#69d3e6",textDecoration:"none"}}>team</a>., with my specific contributions being the Home, About, and Ideas pages. Currently, I'm volunteer Backend Manager at Mega Hack Community.</ParaText1>
+                This website was developed by the entire <a href="https://github.com/MEGA-Hackathon/china.megahack.tech/tree/main" target='blank'  style={{color:"#69d3e6",textDecoration:"none"}}>team</a>., with my specific contributions being the Home, About, and Ideas pages. I helped Mega Hack Community as a Backend Manager, leading Interns and managing project.</ParaText1>
           
                 <Button1 style={{marginRight:"18px"}} onClick={() => window.open('https://china.megahack.tech/')}>Visit Website</Button1>
                 <Button1 style={{marginRight:"18px"}} onClick={() => window.open('https://github.com/MEGA-Hackathon/china.megahack.tech/tree/main', '_blank')}>View Code</Button1>

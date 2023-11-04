@@ -177,3 +177,24 @@ export const Button1 = styled.a`
         background-color: ${({ theme }) => theme.colors.secondary};
     }
 `;
+
+
+export const Button2 = styled.a`
+    display: inline-block;
+    width: max-content;
+    padding: 0.6rem 1.4rem;
+    color: ${({ theme }) => theme.colors.secondary};
+    background-color: ${({ theme }) => theme.colors.primary_light};
+    border: 2px solid ${({ theme }) => theme.colors.secondary};
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 0.6rem;
+    font-size: 1.1rem;
+
+
+    &:hover {
+        color: ${({ theme }) => theme.colors.primary};
+        background-color: ${({ theme }) => theme.colors.secondary};
+    }
+`;

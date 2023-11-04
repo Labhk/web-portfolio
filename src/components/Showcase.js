@@ -1,5 +1,5 @@
 import React from 'react';
-import { PaddingContainer, FlexContainer, Heading, BlueText,ParaText, Particle } from './styled-components/Global.styled';
+import { PaddingContainer, FlexContainer, Heading, BlueText,ParaText, Particle, Button2 } from './styled-components/Global.styled';
 import { ShowcaseImageCard, ShowcaseParticleContainer, IconContainer } from './styled-components/Showcase.styles';
 import "../App.css"
 import ShowcaseImg from '../assets/boy.jpg';
@@ -7,6 +7,8 @@ import BackgroundImg from '../assets/particle1.png';
 import {BsGithub, BsTwitter, BsLinkedin} from 'react-icons/bs';
 import { motion } from 'framer-motion';
 import { fadeInLeftVariant, fadeInRightVariant } from '../utils/Variants';
+import {FaDownload} from 'react-icons/fa';
+import resumePDF from '../assets/Labh.pdf'
 
 
 
@@ -28,11 +30,18 @@ const Showcase = () => {
                     <BlueText>Full Stack Developer</BlueText>
                 </Heading>
                 
-                <ParaText as="p" top="2rem" bottom="4rem">
-                Hello, my name is Labh Khatke, and I am a full-stack developer with expertise in creating and designing user-friendly websites. I specialize in both front-end and back-end development. 
+                <ParaText as="p" top="2rem" bottom="2rem">
+                Hello! I'm Labh Khatke, a Full Stack Developer passionate about crafting user-friendly websites. With expertise in both front-end and back-end development, I bring digital ideas to life.
                 </ParaText>
-
+                
                 <FlexContainer gap="20px" responsiveFlex >
+                <Button2> <a
+                        style={{textDecoration:"none"}}
+                        href={resumePDF} 
+                        download="Labh_Khatke_Resume.pdf" 
+                    >
+                        <FaDownload/> Resume
+                    </a></Button2>
                     <IconContainer>
                         <BsTwitter onClick={() => window.open('https://twitter.com/Labh__K', '_blank')} />
                     </IconContainer>

@@ -29,6 +29,7 @@ export const IconContainer = styled.div`
     color: #fff;
     transition: all 0.2s ease;
     cursor: pointer;
+    padding-top:13px;
 
     &:hover{
         color: ${({theme}) => theme.colors.secondary};
