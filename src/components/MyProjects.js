@@ -49,7 +49,7 @@ const MyProjects = () => {
             <Project />
         </PaddingContainer>
 
-        <PaddingContainer top="5rem" bottom="5rem">
+        <PaddingContainer top="5rem" bottom="5rem" style={{padding:"15px"}} >
             <Project2  rowReverse/>
         </PaddingContainer>
 
@@ -57,7 +57,7 @@ const MyProjects = () => {
             <Project3 />
         </PaddingContainer>
 
-        <PaddingContainer top="5rem" bottom="5rem">
+        <PaddingContainer top="5rem" bottom="5rem" style={{padding:"15px"}}>
             <Project4  rowReverse/>
         </PaddingContainer>
 
@@ -69,7 +69,7 @@ const MyProjects = () => {
             <Project7 />
         </PaddingContainer>
 
-        <PaddingContainer top="5rem" bottom="5rem">
+        <PaddingContainer top="5rem" bottom="5rem" style={{padding:"15px"}}>
             <Project6  rowReverse/>
         </PaddingContainer>
 

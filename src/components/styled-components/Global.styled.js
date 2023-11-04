@@ -154,20 +154,26 @@ export const Button = styled.a`
     }
 `
 
+
 export const Button1 = styled.a`
     display: inline-block;
     width: max-content;
     padding: 0.8rem 1.6rem;
-    color: ${({theme}) => theme.colors.secondary};
-    background-color: ${({theme}) => theme.colors.primary_light};
-    border: 2px solid ${({theme}) => theme.colors.secondary};
+    color: ${({ theme }) => theme.colors.secondary};
+    background-color: ${({ theme }) => theme.colors.primary_light};
+    border: 2px solid ${({ theme }) => theme.colors.secondary};
     border-radius: 10px;
     cursor: pointer;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
     margin-bottom: 0.6rem;
 
-    &:hover{
+    @media (max-width: 768px) {
+        width: 100%; /* Make the button full width on smaller screens */
+        margin-bottom: 1rem; /* Increase margin for better spacing on smaller screens */
+    }
+
+    &:hover {
         color: ${({ theme }) => theme.colors.primary};
         background-color: ${({ theme }) => theme.colors.secondary};
     }
-`
+`;

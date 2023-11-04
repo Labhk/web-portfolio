@@ -41,6 +41,7 @@ export const ProjectImage = styled.img`
 
     @media ${({ theme }) => theme.breakpoints.mobile}{
         width: 100%;
+        border-radius: 10px;
     }
 `
 

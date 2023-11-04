@@ -21,7 +21,7 @@ import {
 } from '../styled-components/MyProjects.styled';
 
 import {FaGithub} from 'react-icons/fa';
-import Video4 from '../../assets/project4.webm';
+import Video4 from '../../assets/project4.mp4';
 import Project4 from '../../assets/project4.jpg';
 import { fadeInLeftVariant, fadeInRightVariant } from '../../utils/Variants';
 
@@ -81,7 +81,7 @@ const Project = ({ rowReverse }) => {
           <div className="video-modal">
             <div className="video-content">
               <video controls>
-                <source src={Video4} type="video/webm" />
+                <source src={Video4} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
               <button onClick={closeVideoModal}><LiaWindowCloseSolid style={{ color: "#69d3e6" }} /></button>
